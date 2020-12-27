@@ -104,8 +104,10 @@ Script ini di modifikasi sama saya sendiri FADHIL ID.
 Ket: Aktiv tergantung owner
 
 ## DONASI <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/coin.gif" width="29px">
+```bash
 > 0895330379186
-
+> 089654360447
+```
 
 ## SOSIAL MEDIA ADMIN <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/powerup.gif" width="29px">
 
@@ -119,5 +121,4 @@ Ket: Aktiv tergantung owner
 * [`MhankBarBar`](https://github.com/MhankBarBar/whatsapp-bot)
 * [`Alfbot`](https://github.com/alfiansx/alfbot)
 * [`AR15BOT`](https://github.com/A187ID/AR15BOT)
-<img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Mario_Gameplay.gif" alt="Mario Game" width="600" />
 
