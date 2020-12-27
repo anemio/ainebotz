@@ -109,9 +109,8 @@ Ket: Aktiv tergantung owner
 
 ## SOSIAL MEDIA ADMIN <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/powerup.gif" width="29px">
 
-* [`Youtube Admin`](https://www.youtube.com/channel/)
-* [`Instagram Admin`](https://instagram.com/nur.fdhl_)
-* [`WhatsApp Admin `](https://wa.me/6283102650464)
+* [`Instagram Admin`](https://instagram.com/anemio999)
+* [`WhatsApp Admin `](https://wa.me/62895330379186)
 ## THANKS TO <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Handshake.gif" width="60px">
 
 * [`fdciabdul`](https://github.com/fdciabdul/termux-whatsapp-bot)
