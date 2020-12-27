@@ -1,5 +1,5 @@
 {
-  "name": "MyBot",
+  "name": "AINEBOT",
   "version": "1.0.0",
   "description": "Termux only",
   "main": "index.js",
@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BotMeki/AdiGanZ1ppp.git"
+    "url": "git+https://github.com/anemio/ainebotz.git"
   },
   "keywords": [
     "k"
@@ -37,7 +37,7 @@
   "author": "Abdul Muttaqin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BotMeki/AdiGanZ1/issues"
+    "url": "https://github.com/anemio/ainebotz/issues"
   },
-  "homepage": "https://github.com/BotMeki/AdiGanZ1/readme"
+  "homepage": "https://github.com/anemio/ainebotz/readme"
 }
