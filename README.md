@@ -104,7 +104,7 @@ Script ini di modifikasi sama saya sendiri FADHIL ID.
 Ket: Aktiv tergantung owner
 
 ## DONASI <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/coin.gif" width="29px">
-* [`Donasi 🔰_MyBot_🔰`](+62 831-0265-0464)
+> 0895330379186
 
 
 ## SOSIAL MEDIA ADMIN <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/powerup.gif" width="29px">
