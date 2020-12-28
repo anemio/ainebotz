@@ -438,7 +438,7 @@ axios.get(`https://alfians-api.herokuapp.com/api/yta?url=${aris}`).then((res) =>
 }
 if (text.includes('.ytmp3')){
   var teks = text.replace(/.ytmp3 /, '')
-    axios.get('https://st4rz.herokuapp.com/api/yta2?url='+teks)
+    axios.get('https://alfians-api.herokuapp.com/api/yta?url=${link}')
     .then((res) => {
       imageToBase64(res.data.thumb)
         .then(
@@ -820,7 +820,7 @@ axios.get('https://api.banghasan.com/quran/format/json/acak').then((res) => {
     const sr = /{(.*?)}/gi;
     const hs = res.data.acak.id.ayat;
     const ket = `${hs}`.replace(sr, '');
-    let hasil = `[${ket}]   ${res.data.acak.ar.aris}\n\n${res.data.acak.id.aris}(QS.${res.data.surat.nama}, Ayat ${ket})`;
+    let hasil = `[${ket}]   ${res.data.acak.ar.ayat}\n\n${res.data.acak.id.ayat}(QS.${res.data.surat.nama}, Ayat ${ket})`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
@@ -1293,7 +1293,7 @@ else if (text == '.foto'){
 conn.sendMessage(id, 'kirim !foto cewek/cowok\n\nContoh: !foto cewek' ,MessageType.text);
 }
 else if (text == 'Muhammad Ridwan Reynaldy'){
-conn.sendMessage(id, ' *Iya Muhammad Ridwan Reynaldy itu ownerku kak... Ada yang bisa dibantu? , Follow Instagram Mimin yah : https://instagram.com/anemio999*' ,MessageType.text);
+conn.sendMessage(id, ' *Muhammad Ridwan Reynaldy adalah developer kami kak... Ada yang bisa dibantu? , Follow Instagram developer yah : https://instagram.com/anemio999*' ,MessageType.text);
 }
    if (messageType == 'imageMessage')
    {
@@ -1372,6 +1372,7 @@ _${kata}_
         imageToBase64(nimek) 
         .then(
             (response) => {
+        conn.sendMessage(id, '[WAIT] Sedang Proses...', MessageType.text)
 	var buf = Buffer.from(response, 'base64'); 
               conn.sendMessage(
             id,
@@ -1401,6 +1402,7 @@ if (text.includes(".pokemon"))
         imageToBase64(nimek) 
         .then(
             (response) => {
+        conn.sendMessage(id, '[WAIT] Sedang Proses...', MessageType.text)
 	var buf = Buffer.from(response, 'base64'); 
               conn.sendMessage(
             id,
@@ -1572,9 +1574,9 @@ if (text.includes(".fotoanime"))
  
 if (text.includes(".lirik")){
 	const aris = text.replace(/.lirik /, "")
-	axios.get(`https://arugaz.herokuapp.com/api/lirik?judul=${teks}`).then ((res) => {
+	axios.get(`http://scrap.terhambar.com/lirik?word=${teks}`).then ((res) => {
 	     conn.sendMessage(id, '[WAIT] Sedang Proses...', MessageType.text)
-	 	let hasil = ` *🎧Lirik🎧 Lagu ${aris}:* \n\n\n _${res.data.result}_ `
+	 	let hasil = ` *🎧Lirik🎧 Lagu ${teks}:* \n\n\n _${res.data.result}_ `
 	conn.sendMessage(id, hasil, MessageType.text)
 	})
 }
