@@ -156,6 +156,21 @@ conn.sendMessage(id, 'Lah malah ngatain, berani lu:V' ,MessageType.text);
 else if (text == 'asu'){
 conn.sendMessage(id, 'Lah malah ngatain, berani lu:V' ,MessageType.text);
 }
+else if (text == 'info detail'){
+conn.sendMessage(id, ' *#owner* *#help* *#info* *#donate* *#creator* *#developer* ' ,MessageType.text);
+}
+else if (text == 'Info detail'){
+conn.sendMessage(id, ' *#owner* *#help* *#info* *#donate* *#creator* *#developer* ' ,MessageType.text);
+}
+else if (text == 'Info developer'){
+conn.sendMessage(id, ' *#owner* *#help* *#info* *#donate* *#creator* *#developer* ' ,MessageType.text);
+}
+else if (text == 'info developer'){
+conn.sendMessage(id, ' *#owner* *#help* *#info* *#donate* *#creator* *#developer* ' ,MessageType.text);
+}
+else if (text == '#developer'){
+conn.sendMessage(id, ' *Developer Muhammad Ridwan Reynaldy wa.me/62895330379186* ' ,MessageType.text);
+}
 else if (text == '#owner'){
 conn.sendMessage(id, ' *Owner Muhammad Ridwan Reynaldy wa.me/62895330379186* ' ,MessageType.text);
 }
@@ -173,6 +188,18 @@ conn.sendMessage(id, ' *Menampilkan Donasi!!!* ' ,MessageType.text);
 }
 else if (text == '#creator'){
 conn.sendMessage(id, ' *Creator Muhammad Ridwan Reynaldy wa.me/62895330379186* ' ,MessageType.text);
+}
+else if (text == 'bot'){
+conn.sendMessage(id, ' _Iya..?_ ' ,MessageType.text);
+}
+else if (text == 'Bot'){
+conn.sendMessage(id, ' _Iya..?_ ' ,MessageType.text);
+}
+else if (text == 'bot sayang'){
+conn.sendMessage(id, ' _Iya sayang..?_ ' ,MessageType.text);
+}
+else if (text == 'Bot sayang'){
+conn.sendMessage(id, ' _Iya sayang..?_ ' ,MessageType.text);
 }
 else if (text == 'Pagi'){
 conn.sendMessage(id, ' _Pagi juga Kakak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
