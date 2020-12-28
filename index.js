@@ -1,20 +1,20 @@
 /*
 * JANGAN UBAH-UBAH INFO!!!
 * "JANGAN MODAL NAMA DOANG BRO!!!"
-* SCRIPT BY FADHIL ID
+* SCRIPT BY AINE
 * JANGAN MODAL NAMA DOANG BOSQ
 * HARGAILAH YY MEMBUAT SCRIPT INI BOSQ
 * JANGAN UBAH-UBAH INFO!!!
-* SCRIPIT INI DIRECODE OLEH FADHIL ID.
+* SCRIPIT INI DIRECODE OLEH AINE.
 * BOLEH UBAH TAPI KECUALI INFO!!!
 */
-const A187 = '🔰_MyBot_🔰'; // JANGAN UBAH-UBAH INFO!!!
-const instagram = 'https://instagram.com/nur.fdhl_'; // JANGAN UBAH-UBAH INFO!!!
-const nomer = 'wa.me/6283102650464'; // JANGAN UBAH-UBAH INFO!!!
-const aktif = 'Tergantung Owner'; // JANGAN UBAH-UBAH INFO!!!
-const groupwhatsapp = 'https://bit.ly/3aCaSjI'; // JANGAN UBAH-UBAH INFO!!!
-const youtube = 'https://bit.ly/3aNfHH5'; // JANGAN UBAH-UBAH INFO!!!
-//A187ID
+const AINE = 'AINEBOT'; // NAMA BOTLU!!
+const instagram = 'https://instagram.com/anemio999'; // NAMA IG LU!!!
+const nomer = 'wa.me/62895330379186'; // NOMOR WA LU!!!
+const aktif = 'Tergantung Owner'; // KAPAN BOT LU DI AKTIFKAN!!!
+const groupwhatsapp = 'https://chat.whatsapp.com/EYGeuRbVFkfI8JrH3cNrGV'; // GRUP WA LU!!!
+const youtube = 'https://www.youtube.com/channel/UCCOUPwMDA19sekkYzkdmu6w'; // CHANNEL YT LU!!!
+//AINE
 const qrcode = require("qrcode-terminal");
 const moment = require("moment");
 const cheerio = require("cheerio");
@@ -30,7 +30,7 @@ const donate = require("./lib/donate.js");
 const info = require("./lib/info.js");
 const menu = require("./lib/menu.js");
 const readTextInImage = require('./lib/ocr')
-//A187ID
+//AINE
 const
 {
    WAConnection,
@@ -61,7 +61,7 @@ conn.on('qr', qr =>
    {
       small: true
    });
-   console.log(`[ ${moment().format("HH:mm:ss")} ] Fadhil Graphy QR code ready scan now!`);
+   console.log(`[ ${moment().format("HH:mm:ss")} ] Aine QR code ready scan now!`);
 });
 
 conn.on('credentials-updated', () =>
@@ -76,11 +76,11 @@ fs.existsSync('./session.json') && conn.loadAuthInfo('./session.json')
 //conn.connectOptions.agent = ProxyAgent ('http://1.0.180.120:8080')
 conn.connect();
 
-conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @nur.fdhl_`))
+conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by ig@anemio999`))
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
-   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @nur.fdhl_`)
+   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by ig@anemio999`)
 })
 
 conn.on('message-new', async(m) =>
@@ -91,7 +91,7 @@ conn.on('message-new', async(m) =>
    const messageType = Object.keys(messageContent)[0] // message will always contain one key signifying what kind of message
    let imageMessage = m.message.imageMessage;
    console.log(`[ ${moment().format("HH:mm:ss")} ] => Nomor: [ ${id.split("@s.whatsapp.net")[0]} ] => ${text}`);
-   //GroupsA187ID
+   //GroupsAINE
 
 if (text.includes(".buatgrup"))
    {
@@ -109,7 +109,7 @@ conn.sendMessage(group.gid, "hello everyone", MessageType.extendedText) // say h
 
 }
 
-// FFA187ID
+// FFAINE
 if(text.includes(".cek")){
 var num = text.replace(/.cek/ , "")
 var idn = num.replace("0","+62");
@@ -129,6 +129,9 @@ conn.sendMessage(id, ' _Waalaikumsalam, _Iyaa...ada yang bisa kami bantu? Ketik 
 else if (text == 'salam'){
 conn.sendMessage(id, ' _Waalaikumsalam, _Iyaa...ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
 }
+else if (text == 'Salam'){
+conn.sendMessage(id, ' _Waalaikumsalam, _Iyaa...ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
+}
 else if (text == 'asalamualaikum'){
 conn.sendMessage(id, ' _Waalaikumsalam, _Iyaa...ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
 }
@@ -144,11 +147,17 @@ conn.sendMessage(id, ' _Iya... aku disini kak... ada yang bisa kami bantu? Ketik
 else if (text == 'Halo'){
 conn.sendMessage(id, ' _Iya... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
 }
+else if (text == 'halo'){
+conn.sendMessage(id, ' _Iya... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
+}
 else if (text == 'Asu'){
 conn.sendMessage(id, 'Lah malah ngatain, berani lu:V' ,MessageType.text);
 }
+else if (text == 'asu'){
+conn.sendMessage(id, 'Lah malah ngatain, berani lu:V' ,MessageType.text);
+}
 else if (text == '#owner'){
-conn.sendMessage(id, ' *Owner FADHIL wa.me/6283102650464* ' ,MessageType.text);
+conn.sendMessage(id, ' *Owner Muhammad Ridwan Reynaldy wa.me/62895330379186* ' ,MessageType.text);
 }
 else if (text == '#help'){
 conn.sendMessage(id, ' *Menampilkan Pilihan Menu!!!* ' ,MessageType.text);
@@ -163,73 +172,151 @@ else if (text == '#donate'){
 conn.sendMessage(id, ' *Menampilkan Donasi!!!* ' ,MessageType.text);
 }
 else if (text == '#creator'){
-conn.sendMessage(id, ' *Creator FADHIL wa.me/6283102650464* ' ,MessageType.text);
+conn.sendMessage(id, ' *Creator Muhammad Ridwan Reynaldy wa.me/62895330379186* ' ,MessageType.text);
 }
 else if (text == 'Pagi'){
+conn.sendMessage(id, ' _Pagi juga Kakak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
+}
+else if (text == 'pagi'){
 conn.sendMessage(id, ' _Pagi juga Kakak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
 }
 else if (text == 'Siang'){
 conn.sendMessage(id, ' _Siang juga Kakak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
 }
+else if (text == 'siang'){
+conn.sendMessage(id, ' _Siang juga Kakak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
+}
 else if (text == 'Sore'){
+conn.sendMessage(id, ' _Sore juga Kakak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
+}
+else if (text == 'sore'){
 conn.sendMessage(id, ' _Sore juga Kakak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
 }
 else if (text == 'Malam'){
 conn.sendMessage(id, ' _Malam juga Kakak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
 }
+else if (text == 'malam'){
+conn.sendMessage(id, ' _Malam juga Kakak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
+}
 else if (text == 'Ngentod'){
+conn.sendMessage(id, 'Pengin ngentod? babi looo' ,MessageType.text);
+}
+else if (text == 'ngentod'){
 conn.sendMessage(id, 'Pengin ngentod? babi looo' ,MessageType.text);
 }
 else if (text == 'Anjing'){
 conn.sendMessage(id, 'Jangan toxic anjing, kontol, memek, ngentod, taik, bangsad!!' ,MessageType.text);
 }
+else if (text == 'anjing'){
+conn.sendMessage(id, 'Jangan toxic anjing, kontol, memek, ngentod, taik, bangsad!!' ,MessageType.text);
+}
 else if (text == 'Bacot'){
-conn.sendMessage(id, ' *lu yang bacot_-* ' ,MessageType.text);
+conn.sendMessage(id, ' *lu yang bacot -_-* ' ,MessageType.text);
+}
+else if (text == 'bacot'){
+conn.sendMessage(id, ' *lu yang bacot -_-* ' ,MessageType.text);
 }
 else if (text == 'Test'){
 conn.sendMessage(id, ' _Iya... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
 }
-else if (text == 'Hai'){
+else if (text == 'test'){
 conn.sendMessage(id, ' _Iya... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
 }
+else if (text == 'Hai'){
+conn.sendMessage(id, ' _Hai juga.. Iya... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
+}
+else if (text == 'hai'){
+conn.sendMessage(id, ' _Hai juga.. Iya... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
+}
 else if (text == 'Woi'){
+conn.sendMessage(id, ' _Iya... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
+}
+else if (text == 'woi'){
 conn.sendMessage(id, ' _Iya... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
 }
 else if (text == 'Woy'){
 conn.sendMessage(id, ' _Iya... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
 }
+else if (text == 'woy'){
+conn.sendMessage(id, ' _Iya... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
+}
 else if (text == 'Hi'){
-conn.sendMessage(id, ' _Iya... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ '  ,MessageType.text);
+conn.sendMessage(id, ' _Hi juga.. Iya... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ '  ,MessageType.text);
+}
+else if (text == 'hi'){
+conn.sendMessage(id, ' _Hi juga.. Iya... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ '  ,MessageType.text);
 }
 else if (text == 'Gan'){
-conn.sendMessage(id, ' _Iya... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Iya gan...? aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
+}
+else if (text == 'gan'){
+conn.sendMessage(id, ' _Iya gan...? aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
 }
 else if (text == 'Sis'){
-conn.sendMessage(id, ' _Iya... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Iya sis...? aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
+}
+else if (text == 'sis'){
+conn.sendMessage(id, ' _Iya sis...? aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
 }
 else if (text == 'Bro'){
-conn.sendMessage(id, ' _Iya... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Iya bro...? aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
+}
+else if (text == 'bro'){
+conn.sendMessage(id, ' _Iya bro...? aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
 }
 else if (text == 'Min'){
+conn.sendMessage(id, ' _Iya... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
+}
+else if (text == 'min'){
 conn.sendMessage(id, ' _Iya... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
 }
 else if (text == 'Sayang'){
 conn.sendMessage(id, ' _Iya sayang ada apa? ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
 }
+else if (text == 'sayang'){
+conn.sendMessage(id, ' _Iya sayang ada apa? ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
+}
 else if (text == 'I love u'){
-conn.sendMessage(id, ' _love you too_ ' ,MessageType.text);
+conn.sendMessage(id, ' _I love you too_ ❤️' ,MessageType.text);
+}
+else if (text == 'I love you'){
+conn.sendMessage(id, ' _I love you too_ ❤️' ,MessageType.text);
+}
+else if (text == 'i love you'){
+conn.sendMessage(id, ' _I love you too_ ❤️' ,MessageType.text);
+}
+else if (text == 'I lopyou'){
+conn.sendMessage(id, ' _I love you too_ ❤️' ,MessageType.text);
+}
+else if (text == 'i lopeyou'){
+conn.sendMessage(id, ' _I love you too_ ❤️' ,MessageType.text);
+}
+else if (text == 'Aku sayang kamu'){
+conn.sendMessage(id, ' _Aku juga sayang kamu_ 🥰' ,MessageType.text);
 }
 else if (text == 'Mas'){
-conn.sendMessage(id, ' _Iya... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Iya mas... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
+}
+else if (text == 'mas'){
+conn.sendMessage(id, ' _Iya mas... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
 }
 else if (text == 'Mba'){
-conn.sendMessage(id, ' _Iya... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Iya mba... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
+}
+else if (text == 'mba'){
+conn.sendMessage(id, ' _Iya mba... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
 }
 else if (text == 'Bre'){
-conn.sendMessage(id, ' _Iya... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Iya bre... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
+}
+else if (text == 'bre'){
+conn.sendMessage(id, ' _Iya bre... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
 }
 else if (text == 'Cuy'){
-conn.sendMessage(id, ' _Iya... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Iya cuy... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
+}
+else if (text == 'cuy'){
+conn.sendMessage(id, ' _Iya cuy... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
 }
 else if (text == 'Euy'){
 conn.sendMessage(id, ' _Iya... aku disini kak... ada yang bisa kami bantu? Ketik *#help/#menu* untuk melihat fitur bot kami_ ' ,MessageType.text);
@@ -238,6 +325,9 @@ else if (text == 'Mksh'){
 conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan :)_ ' ,MessageType.text);
 }
 else if (text == 'Makasi'){
+conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan :)_ ' ,MessageType.text);
+}
+else if (text == 'makasi'){
 conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan :)_ ' ,MessageType.text);
 }
 else if (text == 'makasih'){
@@ -249,7 +339,22 @@ conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan :)_ ' ,MessageType
 else if (text == 'mksh'){
 conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan :)_ ' ,MessageType.text);
 }
+else if (text == 'Makasih sayang'){
+conn.sendMessage(id, ' _Sama sama sayang, semoga harimu menyenangkan :)_ ' ,MessageType.text);
+}
+else if (text == 'makasih sayang'){
+conn.sendMessage(id, ' _Sama sama sayang, semoga harimu menyenangkan :)_ ' ,MessageType.text);
+}
+else if (text == 'Terima kasih'){
+conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan :)_ ' ,MessageType.text);
+}
+else if (text == 'terima kasih'){
+conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan :)_ ' ,MessageType.text);
+}
 else if (text == 'Thank'){
+conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan :)_ ' ,MessageType.text);
+}
+else if (text == 'thank'){
 conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan :)_ ' ,MessageType.text);
 }
 else if (text == 'thanks'){
@@ -258,10 +363,16 @@ conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan :)_ ' ,MessageType
 else if (text == 'Thanks'){
 conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan :)_ ' ,MessageType.text);
 }
+else if (text == 'Tq'){
+conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan :)_ ' ,MessageType.text);
+}
+else if (text == 'tq'){
+conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan :)_ ' ,MessageType.text);
+}
 else if (text == '.pesankosong'){
 conn.sendMessage(id, '͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏' ,MessageType.text);
 }
-// FiturA187ID
+// FiturAINE
 
 if (text.includes('.nulis')){
   var aris = text.replace(/.nulis /, '')
@@ -932,7 +1043,7 @@ switch(bulan) {
 }
 var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
-conn.sendMessage(id, help.help(id, A187, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
+conn.sendMessage(id, help.help(id, AINE, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
 }
 if (text == '#menu'){
 var date = new Date();
@@ -968,7 +1079,7 @@ switch(bulan) {
 }
 var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
-conn.sendMessage(id, menu.menu(id, A187, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
+conn.sendMessage(id, menu.menu(id, AINE, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
 }
 
 else if (text == '#donate'){
@@ -1005,7 +1116,7 @@ switch(bulan) {
 }
 var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
-conn.sendMessage(id, donate.donate(id, A187, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
+conn.sendMessage(id, donate.donate(id, AINE, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
 }
 else if (text == '#donasi'){
 var date = new Date();
@@ -1041,7 +1152,7 @@ switch(bulan) {
 }
 var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
-conn.sendMessage(id, donate.donate(id, A187, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
+conn.sendMessage(id, donate.donate(id, AINE, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
 }
 else if (text == '#DONATE'){
 var date = new Date();
@@ -1077,7 +1188,7 @@ switch(bulan) {
 }
 var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
-conn.sendMessage(id, donate.donate(id, A187, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
+conn.sendMessage(id, donate.donate(id, AINE, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
 }
 else if (text == '#DONASI'){
 var date = new Date();
@@ -1113,7 +1224,7 @@ switch(bulan) {
 }
 var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
-conn.sendMessage(id, donate.donate(id, A187, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
+conn.sendMessage(id, donate.donate(id, AINE, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
 }
 else if (text == '#info'){
 var date = new Date();
@@ -1149,16 +1260,13 @@ switch(bulan) {
 }
 var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
-conn.sendMessage(id, info.info(id, A187, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
+conn.sendMessage(id, info.info(id, AINE, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
 }
 else if (text == '.foto'){
 conn.sendMessage(id, 'kirim !foto cewek/cowok\n\nContoh: !foto cewek' ,MessageType.text);
 }
-else if (text == 'Fadhil'){
-conn.sendMessage(id, ' *Iya Fadhil itu ownerku kak... Ada yang bisa dibantu? , Follow Instagram Mimin yah : https://instagram.com/nur.fdhl_*' ,MessageType.text);
-}
-else if (text == 'Clara'){
-conn.sendMessage(id, ' *Iyaa Clara itu adeknya ownerku kak... Ada yang bisa dibantu?  , Follow Instagram adek Mimin Yah : https://instagram.com/clrayyy_*' ,MessageType.text);
+else if (text == 'Muhammad Ridwan Reynaldy'){
+conn.sendMessage(id, ' *Iya Muhammad Ridwan Reynaldy itu ownerku kak... Ada yang bisa dibantu? , Follow Instagram Mimin yah : https://instagram.com/anemio999*' ,MessageType.text);
 }
    if (messageType == 'imageMessage')
    {
@@ -1470,7 +1578,7 @@ axios.get(`https://st4rz.herokuapp.com/api/simsimi?kata=${teks}`).then((res) => 
     })
 }
  else if (text == '.psnkosong'){
-conn.sendMessage(id, '                       ' ,MessageType.text);
+conn.sendMessage(id, '' ,MessageType.text);
 }
  
  
@@ -1479,7 +1587,7 @@ conn.sendMessage(id, '
  
  
  
-//Tolonglah bro jangan di ubah ubah FADHIL ID
+//Tolonglah bro jangan di ubah ubah BY AINE
 
 
 })
