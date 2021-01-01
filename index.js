@@ -188,13 +188,22 @@ else if (text == 'info developer'){
 conn.sendMessage(id, '*#owner* \n *#help* \n *#info* \n *#donate* \n *#creator* \n *#developer*' ,MessageType.text);
 }
 else if (text == '#developer'){
-conn.sendMessage(id, '*#owner* \n *#help* \n *#info* \n *#donate* \n *#creator* \n *#developer*' ,MessageType.text);
+conn.sendMessage(id, 'Developer Muhammad Ridwan Reynaldy\n\nwa.me/62895330379186*' ,MessageType.text);
 }
 else if (text == '#owner'){
-conn.sendMessage(id, '*#owner* \n *#help* \n *#info* \n *#donate* \n *#creator* \n *#developer*' ,MessageType.text);
+conn.sendMessage(id, 'Owner Muhammad Ridwan Reynaldy\n\nwa.me/62895330379186*' ,MessageType.text);
 }
 else if (text == '#help'){
 conn.sendMessage(id, ' *Menampilkan Pilihan Menu!!!* ' ,MessageType.text);
+}
+else if (text == '#link group'){
+conn.sendMessage(id, 'https://chat.whatsapp.com/EYGeuRbVFkfI8JrH3cNrGV' ,MessageType.text);
+}
+else if (text == '#link grup'){
+conn.sendMessage(id, 'https://chat.whatsapp.com/EYGeuRbVFkfI8JrH3cNrGV' ,MessageType.text);
+}
+else if (text == 'Menu'){
+conn.sendMessage(id, 'Ketik *#menu* < ini contohnya' ,MessageType.text);
 }
 else if (text == '#menu'){
 conn.sendMessage(id, ' *Menampilkan Fitur Menu!!!* ' ,MessageType.text);
